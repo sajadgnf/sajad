@@ -1,0 +1,21 @@
+@mixin boxShadow {
+    box-shadow: 0 5px 30px 4px rgba(0, 0, 0, 0.5);
+}
+
+@mixin flexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boxStyle($with, $height, $b_radius) {
+    width: $with;
+    height: $height;
+    border-radius: $b_radius;
+}
+
+@mixin fontStyle($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}

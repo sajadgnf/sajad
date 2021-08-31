@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>music player</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- background -->
+        <div class="container_bg">
+            <img src="assets/images/roqaye.jpg" alt="" id="background">
+        </div>
+
+        <!-- music player -->
+        <div class="music_box">
+
+            <!-- music cover -->
+            <div id="imgBox" class="img_box">
+                <img src="assets/images/roqaye.jpg" alt="" id="cover" class="active">
+            </div>
+
+            <!-- music content -->
+            <div class="music_content">
+                <h2 id="musicName" class="music_name">Nagofti Dokhtari</h2>
+                <h3 id="singerName" class="singer_name">Seyed Amir</h3>
+                <audio id="audio" src="assets/songs/1.mp3"></audio>
+            </div>
+
+            <!-- music duration -->
+            <div class="progress_container" id="progress_container">
+                <div class="progress" id="progress"></div>
+                <div class="duration_warpper">
+                    <span id="current_time"></span>
+                    <span id="duration"></span>
+                </div>
+            </div>
+
+            <!-- music controlers -->
+            <div class="btns">
+                <i id="prev" class="fas fa-backward" title="prev"></i>
+                <i id="play" class="fas fa-play" title="play"></i>
+                <i id="next" class="fas fa-forward" title="next"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/test.js"></script>
+</body>
+
+</html>
